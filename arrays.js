@@ -23,7 +23,7 @@ console.log(anArray[1], anArray[4], anArray[7]);
 // Oppgave 4
 // a) typeof operatøren returnerer hva slags data et element er, men en array er et objekt, fordi den kan inneholde flere
 // typer data.
-// b) For å finne ut om en variabel eller en konstant er en array, så kan du bare skirve [navn].isArray
+// b) For å finne ut om en variabel eller en konstant er en array, så kan du bare skirve Array.isArray[navn]
 // c)
 function arrayDetector(maybeAnArray){
         if(maybeAnArray.isArray == true){
