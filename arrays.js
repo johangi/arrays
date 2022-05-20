@@ -26,7 +26,7 @@ console.log(anArray[1], anArray[4], anArray[7]);
 // b) For å finne ut om en variabel eller en konstant er en array, så kan du bare skirve Array.isArray[navn]
 // c)
 function arrayDetector(maybeAnArray){
-        if(maybeAnArray.isArray == true){
+        if(Array.isArray(maybeAnArray) == true){
             console.log("Argumentet er en array");
         } else{
             console.log("Argumentet er ikke en array");
