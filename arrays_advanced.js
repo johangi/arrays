@@ -12,9 +12,9 @@ i koden, men blir alltid lest før alt annet. Så en funksjon skrevet på linje 
 /*a) En grunn kopi kopierer referansen til et objekt, så hvis du endrer noe i det originale objektet eller i kopien
 så vil det endres begge steder. En dyp kopi kopierer verdien til objektet, som gjør at kopien blir selvstendig.*/
 // b)
-function arrayCopyMachine(array, arrayDeepCopy){
-    arrayDeepCopy = JSON.parse(JSON.stringify(array));
-    console.log(arrayDeepCopy)
+function arrayCopyMachine(...array){
+    array = JSON.parse(JSON.stringify(array));
+    return array
 }
 
-arrayCopyMachine([1, 2, 3, 4])
+console.log(arrayCopyMachine(1, 2, 3, 4))
